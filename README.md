@@ -1,6 +1,14 @@
+[![Demo](https://img.shields.io/badge/Demo-Online-000?style=for-the-badge&logo=vercel)](https://odonto-six.vercel.app/)
+
 # Landing page odontológica
 
 Landing page responsiva para centralizar os endereços e canais de contato de uma clínica odontológica. A página apresenta as unidades da clínica e oferece acesso direto à localização no Google Maps e ao atendimento pelo WhatsApp.
+
+## Demonstração
+
+Acesse a versão publicada do projeto:
+
+👉 https://odonto-six.vercel.app/
 
 ## Tecnologias
 
@@ -42,7 +50,7 @@ No arquivo `index.html`, edite os dados de cada unidade:
 
 Para adicionar outra unidade, duplique o elemento `<article class="card">` dentro da seção com a classe `grid` e atualize as informações.
 
-As cores, espaçamentos e tipografia podem ser ajustados em `styles.css`, principalmente pelas variáveis declaradas em `:root`.
+As cores, espaçamentos e tipografia podem ser ajustadas em `styles.css`, principalmente pelas variáveis declaradas em `:root`.
 
 ## Licença
 
