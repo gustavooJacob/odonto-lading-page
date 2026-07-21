@@ -33,6 +33,7 @@ body {
   color: var(--text);
   font-family: "Segoe UI", "Trebuchet MS", sans-serif;
   line-height: 1.5;
+  padding-bottom: 24px;
 }
 
 a {
@@ -323,10 +324,9 @@ h2 {
 }
 
 .sticky-bar {
-  position: fixed;
-  left: 12px;
-  right: 12px;
-  bottom: 12px;
+  position: static;
+  width: min(100%, 760px);
+  margin: 16px auto 0;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 10px;
@@ -374,5 +374,18 @@ h2 {
 
   .highlights {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .sticky-bar {
+    position: fixed;
+    left: max(12px, env(safe-area-inset-left));
+    right: max(12px, env(safe-area-inset-right));
+    bottom: max(12px, env(safe-area-inset-bottom));
+    width: auto;
+    margin: 0;
+  }
+
+  body {
+    padding-bottom: calc(128px + env(safe-area-inset-bottom));
   }
 }
